@@ -608,8 +608,7 @@ class StateProvider extends Component<StateContextProps, StateContextState> {
     if (!contentComponent)
       return console.error("There is no content component");
     const transform = `translate(${posX ||
-      this.stateProvider.positionX}px, ${posY ||
-      this.stateProvider.positionY}px) scale(${scale ||
+      this.stateProvider.positionX}px, $0px) scaleX(${scale ||
       this.stateProvider.scale})`;
     contentComponent.style.transform = transform;
     contentComponent.style.WebkitTransform = transform;
